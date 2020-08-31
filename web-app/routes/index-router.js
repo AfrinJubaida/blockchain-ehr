@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-let title = "Blockchain Certificate";
+let title = "Blockchain Certificate for EHR";
 let root = "index";
 
 /* GET home page. */

@@ -48,7 +48,8 @@ const certificateSchema = new mongoose.Schema({
     prescription: {
         type: String, 
         required: true,
-        //todo Add custom validator to ensure is a number in the range 0-4
+        trim: true
+        
     },
     dateOfIssuing: {
         type: Date,

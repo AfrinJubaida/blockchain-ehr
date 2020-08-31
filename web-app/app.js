@@ -8,6 +8,7 @@ const mongoose = require('./database/mongoose');
 //load fabric environemtn
 require('./loaders/fabric-loader');
 
+const PORT = 3000;
 
 //third party libraries
 let createError = require('http-errors');
@@ -49,6 +50,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(helmet());
 
 app.use(sessionMiddleware);
+app.listen(PORT, () => console.log(`App listening on port ${PORT}`));
 
 //routers
 app.use('/', indexRouter);
