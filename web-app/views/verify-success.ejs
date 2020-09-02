@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="/js/register.js"></script>
+
 <body class="bg-light">
 <%- include('partials/navbar-partial.ejs') %>
 
@@ -25,7 +30,7 @@
     <br>
     <h1 class="text-success text-center">Verification Successful</h1>
 
-    <div class="row cert-container card">
+    <div class="row cert-container card bg-warning" style="max-width: 60rem;">
             <div class="col-sm-12 card-body ">
                 <div class="row text-center upper-row">
                     <div class="col-sm-4 orange"> <strong>Patient Name <br></strong> <%= certData.patientName %> </div>
@@ -35,7 +40,7 @@
                 <div class="row text-center middle-row">
                     <div class="col-sm-4 orange"> <strong>Doctor Name<br></strong> <%= certData.doctorName %></div>
                     <div class="col-sm-4 orange"><strong>Doctor Email<br></strong> <%= certData.doctorEmail %> </div>
-                    <div class="col-sm-4 orange"><strong>Certificate UUID <br></strong><%= certData._id %></div>
+                    <div class="col-sm-4 orange"><strong>Certificate ID <br></strong><%= certData._id %></div>
                 </div>
                 <div class="row text-center bottom-row">
                     <% Object.keys(proofData).forEach(function (key) {  %>
@@ -54,7 +59,4 @@
 </body>
 
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<script src="/js/register.js"></script>
+

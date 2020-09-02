@@ -32,7 +32,7 @@ body {
 }
 .inline {
   /*display: inline;*/
-  color: rgba(255, 0, 0, 0.8);
+  color: black;
 }
 .modal-body{
   word-wrap: break-word;
@@ -44,16 +44,16 @@ body {
 
 .cert-container {
   margin-top: 3rem;
-  margin-bottom: 2rem;
-  padding-top: .4rem;
-  padding-bottom: .4rem;
+  margin-bottom: 3rem;
+  padding-top: .7rem;
+  padding-bottom: .8rem;
 }
 
 .upper-row{
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 .middle-row{
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .list-group li {
@@ -69,24 +69,24 @@ body {
 }
 
 .tab-width a {
-  color: #CD5C5C;
+  color: #7b3737;
 }
 
 .nav-item a {
-  color: #CD5C5C;
+  color: #7b3737;
 }
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 .marketing h2 {
-  font-weight: 400;
+  font-weight: 500;
 }
 .marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+  margin-right: .95rem;
+  margin-left: .95rem;
 }
 
 
@@ -96,8 +96,8 @@ body {
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
-  line-height: 1;
+  font-weight: 400;
+  line-height: 1.5;
   letter-spacing: -.05rem;
 }
 

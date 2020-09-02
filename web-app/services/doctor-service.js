@@ -40,12 +40,12 @@ async function issueCertificate(certData) {
 /**
  * Fetch and return all certificates issued by a specific doctor
  * @param {String} doctorName
- * @param {String} universtiyEmail
+ * @param {String} doctorEmail
  * @returns {Promise<certificates[]>}
  */
-async function getCertificateDataforDashboard(doctorName, universtiyEmail) {
+async function getCertificateDataforDashboard(doctorName, doctorEmail) {
     let doctorProfile = await chaincode.invokeChaincode("queryDoctorProfileByName",
-        [doctorName], true, universtiyEmail);
+        [doctorName], true, doctorEmail);
 
     let certLedgerDataArray = await chaincode.invokeChaincode("getAllCertificateByDoctor",
         [doctorProfile.publicKey], true, doctorEmail);
