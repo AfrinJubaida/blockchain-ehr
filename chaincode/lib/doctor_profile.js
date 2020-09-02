@@ -24,7 +24,6 @@ class DoctorProfile {
     /**
      * Instantiate object from json argument. 
      * @param {json} data json data of a Profile instance 
-     * @returns {UniversityProfile} instantiated University Profile object. 
      */
 
     static deserialize(data) {
