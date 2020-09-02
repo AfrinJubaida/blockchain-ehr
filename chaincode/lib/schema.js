@@ -1,10 +1,3 @@
-// eg UniversitySchema = {
-//     dataType : "schema",
-//     id: "v1",
-//     ordering: ["patientName", "patientEmail", "doctorName", "doctorEmail", "disease", "departmentName", "prescription"],
-//     certificateType: "doctor degree"
-// }
-
 
 class Schema {
     /**
@@ -25,7 +18,6 @@ class Schema {
     /**
     * Instantiate object from json argument. 
     * @param {json} data json data of a Profile instance 
-    * @returns {UniversityProfile} instantiated University Profile object. 
     */
     static deserialize(data) {
         return new Schema(data.certificateType, data.id, data.ordering);

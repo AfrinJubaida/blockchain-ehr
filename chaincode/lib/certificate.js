@@ -41,7 +41,6 @@ class Certificate {
     }
     
 
-    //todo: Add validation of some kind to see that the signatures match and stuff. (LATER)
 }
 
 module.exports = Certificate;
