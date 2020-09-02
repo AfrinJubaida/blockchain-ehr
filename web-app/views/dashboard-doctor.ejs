@@ -25,11 +25,11 @@
 <!--// Email of patient-->
 <!--//-->
 
-<div class="container bg-warning justify-content-center"  >
+<div class="container justify-content-center"  >
 
 
     <% for(var i=0; i < certData.length; i++) { %>
-        <div class="row cert-container card">
+        <div class="row cert-container card bg-warning">
             <div class="col-sm-12 card-body ">
                 <div class="row text-center upper-row">
                     <div class="col-sm-4 orange"> <strong>Name <br></strong> <%= certData[i].patientName %> </div>
@@ -42,8 +42,8 @@
                     <div class="col-sm-4 orange"><strong>Disease <br></strong><%= certData[i].disease %></div>
                 </div>
                 <div class="row text-center bottom-row">
-                    <div class="col-sm-4 orange"> <strong>Certificate UUID <br></strong> <%= certData[i].certUUID %></div>
-                    <div class="col-sm-8 orange"><strong>Certificate Hash<br></strong> <%= certData[i].hash %> </div>
+                    <div class="col-sm-4 orange"> <strong>Report ID <br></strong> <%= certData[i].certUUID %></div>
+                    <div class="col-sm-8 orange"><strong>Report Hash<br></strong> <%= certData[i].hash %> </div>
                 </div>
             </div>
         </div>

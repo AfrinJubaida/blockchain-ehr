@@ -30,7 +30,7 @@
     <br>
     <h1 class="text-success text-center">Verification Successful</h1>
 
-    <div class="row cert-container card bg-warning" style="max-width: 60rem;">
+    <div class="row cert-container card bg-warning" >
             <div class="col-sm-12 card-body ">
                 <div class="row text-center upper-row">
                     <div class="col-sm-4 orange"> <strong>Patient Name <br></strong> <%= certData.patientName %> </div>
@@ -40,7 +40,7 @@
                 <div class="row text-center middle-row">
                     <div class="col-sm-4 orange"> <strong>Doctor Name<br></strong> <%= certData.doctorName %></div>
                     <div class="col-sm-4 orange"><strong>Doctor Email<br></strong> <%= certData.doctorEmail %> </div>
-                    <div class="col-sm-4 orange"><strong>Certificate ID <br></strong><%= certData._id %></div>
+                    <div class="col-sm-4 orange"><strong>Report ID <br></strong><%= certData._id %></div>
                 </div>
                 <div class="row text-center bottom-row">
                     <% Object.keys(proofData).forEach(function (key) {  %>

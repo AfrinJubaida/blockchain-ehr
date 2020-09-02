@@ -27,11 +27,11 @@
 <!--// Email of patient-->
 <!--//-->
 
-<div class="container bg-warning justify-content-center"  >
+<div class="container  justify-content-center"  >
 
 
     <% for(var i=0; i < certData.length; i++) {%>
-        <div class="row cert-container card">
+        <div class="row cert-container card bg-warning">
             <div class="col-sm-12 card-body ">
                 <div class="row text-center upper-row">
                     <div class="col-sm-4 orange"> <strong>Doctor<br></strong> <%= certData[i].doctorName %> </div>
@@ -44,9 +44,9 @@
                     <div class="col-sm-4 orange"><strong>Disease <br></strong><%= certData[i].disease %></div>
                 </div>
                 <div class="row text-center bottom-row">
-                    <div class="col-sm-4 orange"> <strong>Certificate ID <br></strong> <%= certData[i].certUUID %></div>
+                    <div class="col-sm-4 orange"> <strong>Report ID <br></strong> <%= certData[i].certUUID %></div>
                     <div class="col-sm-4 orange"></div>
-                    <button id="shareButton" type="button" class="col-sm-4  btn btn-primary" data-toggle="modal" data-target="#shareDataModal" data-certid="<%= certData[i].certUUID %>">Share Certificate</button>
+                    <button id="shareButton" type="button" class="col-sm-4  btn btn-primary" data-toggle="modal" data-target="#shareDataModal" data-certid="<%= certData[i].certUUID %>">Share Medical Report</button>
                 </div>
             </div>
         </div>
@@ -104,7 +104,7 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Proof Generated. Copy Proof Below.</h5>
+                        <h5 class="modal-title" id="exampleModalLongTitle">Proof Generated. Copy This Proof to Verify the Report.</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
